@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sam's Webpage</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+
+</style>
+<link rel="stylesheet" href="template-css.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <div class="p-5 bg-dark text-white text-center">
+        <h1>Website Portfolio</h1>
+        <p></p> 
+    </div>
+
+
+<!--Nav links that follow all over the page.-->
+<div id="nav-bar"></div>
+<script>
+    window.onload = function() {
+    fetch('nav-bar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('nav-bar').innerHTML = data; // Match the IDs
+          console.log(data); // Check if data is fetched correctly
+      });
+  }
+</script>
+
+
+      <!--Top id link-->
+      <a id="Top"></a>
+
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-4">
+            <!--about me-->
+            <h2>About Me</h2>
+            <div class="fakeimg">image of me.</div>
+            <p>I am a grduating senior at Southeast Missouri State Univerity. As a Computer Science major, my skills lay in coding and problem solving. I enjoy creating rojects that challenge me but also provide help to me or others. I'm passionate about databases and web development. I look forward to making an imapct on others and learn even more about my field.
+            </p>
+            <!--skills id link and the lists-->
+            <a id="skills"></a>
+            <h3 class="mt-4">Skills</h3>
+            <h4>Proficient languages</h4>
+            <dl class="nav nav-pills flex-column" style="list-style-type:square">
+                <dt class="nav-item">SQL</dt>
+                <dt class="nav-item">Java</dt>
+                <dt class="nav-item">Python</dt>
+                <dt class="nav-item">Front-End</dt>
+                <dd class="nav-item">CSS, HTML, JAvaScript, Angular, Bootstrap</dd>
+                <dt class="nav-item">C languages</dt>
+                <dd class="nav-item">C#, C++</dd>
+            </dl>
+            <h4>Technical Skills</h4>
+            <dt class="nav nav-pills flex-column" style="list-style-type:square">
+                <dt class="nav-item">Microsoft Applications</dt>
+                <dd class="nav-item">Word, Excel, PowerPoint, Access</dd>
+                <dt class="nav-item">IDEs</dt>
+                <dd class="nav-item">Visual Studio Code, Netbeans, MySQL, Jupyter Notebook, PyCharm, Netbeans</dd>
+                <dt class="nav-item">AWS</dt>
+            </dt>
+
+                <!--links link-->
+            <h3 class="mt-4">Links</h3>
+            <a id="links"></a>
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Github</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Replit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LinkedIn</a>
+              </li>
+            </ul>
+            <hr class="d-sm-none">
+          </div>
+          <div class="col-sm-8">
+
+
+            <!--project link-->
+            <a id="projects"></a>
+          <h2 class="mt-5">Projects</h2>
+          <p>All project code can be found at Github. Some may also be found at Replit, but have been transfered over.</p>
+      
+      <!--access database-->
+        <h5>Access Database for Customers</h5>
+          <img src="access-database-ex.png" alt="Access Database screenshot showing a form" class="img-fluid">
+          <p>This is a Access Database that keeps track of the invoices, charges, and customer payments made to a store. It had a form to add new customers or to edit the customers already existing, and a report template to be able to send out all the charges acccumulated in the period.
+          </p>
+          <p><i>The names of the businesses have been blotted out for confidentiality.</i></p>
+      
+      <!--photography website-->
+        <h5>Photography Website for Class</h5>
+          <p>This project was part of a class assignment focused on learning HTML, CSS, and JavaScript. The end goal was to create a website following the Dos and Don'ts my professor created. I created a photography portfolio and blog.
+          <br>It included a home page, image gallery allowing you to move through the different topics nad pictures available, a information page telling the tools I used, and a blog. It is currently unfinished, but if i were to go back and finish it, it would have a working internal navigation for the blog page, better structure, and a lightbox functionality for the pictures.</p>
+          </p>
+          <p>A view of the website can be found at <a href="http://woodall.atwebpages.com/homepg.htm" target="_blank">woodall.atwebpages.com/hompe.htm</a> </p>
+      
+      <!--frilled neck lizard adoption page-->
+        <h5>Frilled-neck Lizard Adoption</h5>
+          <p>As another class project, the Adopt a Pet page is a simplistic page designed to convince my teacher to get a frilled-neck lizard as his next pet. It gives a species overview, care instructions, behavior, and whether or not it was legal to own in the state of Arkansas. It includes text, hyperlinks, pictures, and a table. It is easy to see the improvement that I had made in this project.</p>
+          <p>A view of this website can be found at <a href="http://woodall.atwebpages.com/adoption3.htm" target="_blank">woodall.atwebpages.com/adoption3.htm</a></p>
+        
+        <!--mysql database-->
+        <h5>MySQL Datbase for Class Assignment</h5>
+        <img src="CS440-Assignment.png" alt="Screenshot of the datbase in MySQL" class="img-fluid" >
+          <p>I created a MySQL Database to log all SEMO Computer Science, Cybersecurity, and Information Systems classes as well as made up students and the faculty of the department. I learned to create, delete, adn modify tables and columns. The tables for the classes included the name, number, teacher, credit hours, and seats available. It connected with the faculty through last names. The Faculty table consisted of names, whther tehy had a PHD or MS, department, email, and office. The students table contained their SO number, name, standing, current credit hours, overall credit hours, major, ift hey had a minor, and their grduation date.</p>
+       
+       <a id="class-work"></a>
+       <!--class work id and works-->
+       <h2 class="mt-5">Current and Past Class Work</h2>
+       <h5>AWS</h5>
+       <p></p>
+
+       <h5>Data Anayltics</h5>
+       <p></p>
+       
+       <h5>IT Management</h5>
+       <p></p>
+       
+
+       <h5></h5>
+       
+       
+       
+        </div>
+        </div>
+      <div>
+
+
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p>Footer</p>
+</div>
+
+<script>
+window.onload = function() {
+  alert("I do not collect cookies or souls, but I will trade a soul for a cookie.");
+}
+
+</script>
+</body>
+</html>
