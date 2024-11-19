@@ -1,0 +1,49 @@
+body	{
+background-color: Maroon;
+}
+h1	{
+	color: white;
+}
+h2	{color:white;
+}
+h3	{color:white;
+}
+h4	{color:white;
+}
+h5	{color:white;
+}
+h6	{color:white;
+}	
+p	{background-color:Maroon;
+	 color:white; text-align:center; font-size:20px;
+}
+dt	{color:white;
+}
+dd	{color:white;
+}
+a	{background-color:Maroon;
+	  color:black;
+	font-size:25px;
+	text-align:center;
+}
+table{
+	width:100%;
+}
+table, th, td {
+	color:white;
+	border:0px solid black; 
+	border-collapse: collapse;
+	text-align:center;
+}
+th	{
+	text-align:center;
+	padding-top:10px; padding-bottom:10px;
+	padding-left:10px; padding-right:10px;
+}
+td	{
+	text-align:center;
+	padding-top:10px; padding-bottom:10px;
+	padding-left:10px; padding-right:10px;
+}
+	
+	

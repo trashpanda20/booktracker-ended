@@ -1,0 +1,413 @@
+<doctype!html>
+<html>
+<head>
+<title>Gallery</title>
+<link rel="stylesheets"href="gallery.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+table,th,td{border:2px dotted black;text-align:center;}
+
+table{border-spacing:25px;}
+
+* {box-sizing: border-box;}
+
+.main {max-width: 1000px; margin: auto;}
+
+h1 {font-size: 50px; word-break: break-all;}
+
+.row {margin: 10px -16px;}
+
+.row,
+.row > .column{padding: 8px;}
+
+.column{float:left; width:33.33%; display: none;}
+
+.row:after{content:''; display:table; clear:both;}
+
+.content{background-color:white; padding:10px;}
+
+.show{display:block;}
+
+.btn{border:none;outline:none;padding:12px 16px; background-color:white; cursor:pointer;}
+
+.btn:hover{background-color:#ddd;}
+
+.btn.active{background-color:#666; color:white;}
+body{background-color:lightpink;}
+
+
+</style>
+</head>
+<body>
+<!--SamanthaWoodall-->
+<!--The table on every single one has to be a different color, but that's Monday's problem.-->
+<!--I knoqw this is when I should've done, my pictures, but I'm havign trouble decidng which ones I want to present, because I ahve a lot, but some of them aren't to good.-->
+<table width="100%">
+<tr>
+<th colspan="4"><a href="homepg.htm">Home</th>
+</tr>
+<tr>
+<td><a href="infopg.htm">Infomation</a></td><td><a href="gallery.htm">Gallery</a></td><td><a href="blog.htm">Blog</a></td><td><a href="aboutme.htm">About</a></td>
+<!--I don't know what the home page is yet-->
+</tr>
+</table>
+<!--I understand that there should be photos in a gallery, but I'm not gonna load it down with pictures until i study how to line them up and make them look pretty, so I'm just gonna organize how i want it grouped.-->
+<!--<h1 style="color:palevioletred;">Animals!</h1>
+<p>This section is full of all the animals I've ever taken photos of. They're typically pets I've had or still have. I've loved them all almost equally, but I've done my best to keep a momento to remeber them by.</p>-->
+<!--Picture picture picture of all the anima lpictures ihave. which is a lot, becuase I have a lot of pictures.-->
+<!--<h2 style="color:#e4007c";>Walking humanoids!</h2>
+<p>I wish I was one of those photographers who could go out and take pictures of things in the city and people just living their lives, but alas, I am but a teenager who lives in the middle of no-where. So, I have to settle for taking pictures of the people I love, and I love taking pictures of them even when they look stupid. Not eveyone will pose for a picture or give into my, admittedly, bossy attitude, so some will show up more than others.</p>
+
+<h3 style="color:#d470a2";>Miscellaneous Pictures</h3>
+<p>I don't always take the same pictures of the same old things, but sometimes I do. I love scenery pictures, but I don't really have enough that I could make a whole category by itself. I do have quite a few photos though that also have no solid category. There's no reason they can't all be in a category together.</p>-->
+<!--Deer wood pictures! Oh, they're so awesome. It's gonna be so good in november when I go down there! I'm gonna take so many pictures this year. Just for this site!!!!!!-->
+<!--This next p is for after I've put all those phots and islike kind of afterthoughty looking, but not really-->
+<div class="main">
+<hr>
+<h2>Portfolio</h2>
+
+<div id="mybtnContainer">
+<button class="btn active" onclick="filterSelection('all')">All of Them</button>
+<button class="btn" onclick="filterSelection('animals')">Animals!</button>
+<button class="btn" onclick="filterSelection('people')">Walking Humaoids</button>
+<button class="btn" onclick="filterSelection('other')">Other!</button>
+</div>
+
+<div class="row">
+  <div class="column animals">
+    <div class="content">
+      <img src="IMG_0101.jpg" alt="dog" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+      <img src="IMG_0145.jpg" alt="dog" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+      <img src="IMG_0192.jpg" alt="dog" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+      <img src="IMG_0213.jpg" alt="dog" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+      <img src="IMG_0323.jpg" alt="dog" style="width:100%">
+    </div>
+  </div>
+ 
+  <div class="column animals">
+    <div class="content">
+    <img src="IMG_0841.jpg" alt="Raccoon" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="IMG_5809.jpg" alt="horse" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="IMG_1435.jpg" alt="dog" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="IMG_5817.jpg" alt="horses" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="IMG_5756.jpg" alt="cat" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="IMG_1744.jpg" alt="butterfly" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="IMG_5974.jpg" alt="cow" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="IMG_5957.jpg" alt="cows" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="IMG_5955.jpg" alt="cow" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="IMG-0126.jpg" alt="cat" style="width:100%">
+    </div>
+	</div>
+	<div class="column animals">
+    <div class="content">
+    <img src="IMG-0434.jpg" alt="raccoon" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="IMG-0436.jpg" alt="raccoon" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="IMG-0435.jpg" alt="raccoon" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="IMG-0382.jpg" alt="german shepard" style="width:100%">
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="IMG-0439.jpg" alt="frog" style="width:100%">
+    </div>
+  </div>
+  </div>
+  <!--This is where the animal column ends as a check mark so i have a visual-->
+  <div class="column people">
+    <div class="content">
+      <img src="IMG_0459.jpg" alt="4" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="IMG_7218.jpg" alt="1" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="IMG_7219.jpg" alt="1" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="IMG_7223.jpg" alt="1" style="width:100%">
+    </div>
+  </div><div class="column people">
+    <div class="content">
+      <img src="IMG_7248.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="IMG_8734.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="IMG_8763.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="IMG_8782.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="IMG_8791.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="COLOR_POP (1).jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="COLOR_POP.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="IMG_1451.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="IMG_0687.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="IMG_0691.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="IMG_5411.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="IMG_5449.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="IMG_5373.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="IMG_5400.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="IMG_5647.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="IMG_2281.jpg" alt="person" style="width:100%">
+    </div>
+  </div><div class="column people">
+    <div class="content">
+    <img src="IMG_1503.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="IMG_1464.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="back.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+<!--end of people and start of other-->
+  <div class="column other">
+    <div class="content">
+      <img src="IMG_1490.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column other">
+    <div class="content">
+    <img src="IMG_5176.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column other">
+    <div class="content">
+    <img src="IMG_5611.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column other">
+    <div class="content">
+    <img src="IMG-0440.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column other">
+    <div class="content">
+    <img src="IMG-0438.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+  <div class="column other">
+    <div class="content">
+    <img src="IMG-0437.jpg" alt="person" style="width:100%">
+    </div>
+  </div>
+ 
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<p>If you think you might like to try photography, you can follow the links I've left in my <a href="infopg.htm">information</a> page. If you think you might like my photos, the links to my social media are in my <a href="aboutme.htm">about me</a> page, and they are going to be more frequently updated with pictures or even have pictures that I didn't put on here.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
