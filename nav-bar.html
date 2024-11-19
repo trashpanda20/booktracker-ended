@@ -1,51 +1,21 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#Top" id="top-link">Top</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects" id="project-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#class" id="class-link">Class Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#work" id="work-link">Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#index" id="index-link">About</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.htm" id="home-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.htm" id="project-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme2.htm" id="about-link">About Me</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-
-<script>
-    function disableCurrentLink() {
-        const currentPath = window.location.hash;
-
-        document.querySelectorAll('.nav-link').forEach(link => {
-            if (link.getAttribute('href') === currentPath) {
-                link.classList.add('disabled');
-                link.setAttribute('aria-disabled', 'true');
-                link.removeAttribute('href');
-            }
-        });
-    }
-
-    document.querySelectorAll('.nav-link').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            target.scrollIntoView({ behavior: 'smooth' });
-        });
-    });
-
-    window.onload = disableCurrentLink;
-</script>
+    </nav>
