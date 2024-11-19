@@ -3,107 +3,159 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="tab.css">
+    <script src="tab.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="nav-bar.js"></script>
+    <style>
+      .column {
+        float: left;
+        width: 33.33%;
+      }
+      
+      /* Clear floats after the columns */
+      .row: after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+
 </head>
 <body>
-    <style>
-       /* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-} 
-    </style>
-<!--Nav links that follow all over the page.-->
 <div id="nav-bar"></div>
 <script>
     window.onload = function() {
-    fetch('nav-bar.html')
-      .then(response => response.text())
-      .then(data => {
-          document.getElementById('nav-bar').innerHTML = data; // Match the IDs
-          console.log(data); // Check if data is fetched correctly
-      });
-  }
+        fetch('nav-bar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-bar').innerHTML = data;
+            });
+    }
 </script>
 
+<h2>Projects</h2>
+<p>Below are three favorite examples of my work. You can check out some more in my tabs below or just click on my Github.</p>
+<!--add link to GitHub-->
+<div class="row">
+  <div class="column">
+    <img src="CS440-assignment.png" alt="MySQL database" style="width:100%">
+      <h3>Class Database</h3>
+      <p>Lorem ipsum..</p>
+  </div>
+  <div class="column">
+    <img src="placeholder.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum..</p>
+  </div>
+  <div class="column">
+    <img src="placeholder.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum..</p>
+  </div>
+</div>
 <div class="tab">
     <button class="tablinks" onclick="openTab(event, 'Programming')">Programming</button>
     <button class="tablinks" onclick="openTab(event, 'web')">Web Design</button>
     <button class="tablinks" onclick="openTab(event, 'databases')">Databases</button>
     <button class="tablinks" onclick="openTab(event, 'current')">Current Work</button>
-    </div>
+    </div><!--tab div close-->
 
 <!--content-->
 <div id="programming"class="tabcontent">
+  
     <h3>Programming</h3>
-    <p>programming work ive done.</p>
-</div>
+
+    <p>Currently, most of the coding work I have done has been in classes. </p>
+    <!--assembly and atari-->
+    <h4>Assembly Language</h4>
+    <p>In this class we learned how to create programs using Risc-V. We learned to code the Tower of Hanoi game and a number conversion from binary, Decimal, and Hexadecimal. 
+        It is a really hard language for those who are used to the way that you write with high-level languages. 
+        It gives a lot of control, but it needs a line of code for every single movement it makes. One of the last assignments we made in the class was an atari game. 
+        It was a group project. My group decided to go with a combination of Snake and Frogger. While it was never finished, we did get it to work to a certain extent. 
+        Firstly, I created the sprite. It was an accident, but it became a frog-looking creature. The frog had to be able to move across the screen and collect little balls. 
+        The balls would then spawn in a different spot once they interacted with the sprite. It took a lot of effort and late nights,
+        but we eventually got the frog to be able to interact with the ball and move around on screen.</p>
+    <p>The link for the assignments for this class can be found at this GitHub Repository.</p>
+    <p>I am working my way through a Risc-V book on the language again, because while I didn't understand it then, I liked the language and simplicity through which everything worked. 
+        It was hard to learn as there weren't many resources to be used. The resource we used the most was the online CREATOR compiler from GitHub. </p>
+    <!--add link for compiler later-->
+    <!--python-->
+    <h4>Python</h4>
+    <p>I went through all the basics of how to write in Python. Most of the assignments I have created will be available on my GitHub, but the notable projects 
+        I have worked on creating a simple calculator, a simple web scraper, a GUI application, a simple chatbot, and a simple weather dashboard.
+      During my Data Analytics class, we learned how to use Numpy, Pandas, and Matplotlib, as well as web scrapers.
+
+    </p><!--explain more in-depth about the small side projects from the book/-->
+
+    <!--Java-->
+    <!---Expalin about having learned the basics in this class, and pick up a book about it along with the gae development one we have already-->
+
+    <!--C languages-->
+    <!--explain the assign, ents youve done in the programming class, and pick up another book for it.-->
+
+</div><!--programming tab close-->
 
 <div id="web" class="tabcontent">
-    <h3>Web Design</h3>
-    <p>web design work</p>
-</div>
 
-<div id="'databases" class="tabcontent">
+    <h3>Web Design</h3>
+
+    <p>Web Development was the first programming I learned to do. I have spent a lot of time learning how to do a lot of things in HTML, CSS, and JavaScript, including this website.</p>
+    <h4>This website</h4>
+    <p></p>
+    <h4>Advanced Web Development</h4>
+    <h5>HTML, CSS, and JavaScript</h5>
+    <p>add in bootscrap parts</p>
+    <h5>React and Angular</h5>
+    <p></p>
+    <h5>Backend Languages</h5>
+    <p></p>
+
+    <h4>ANC Course</h4>
+    <h5>Lizard Adoption</h5>
+    <p>As another class project, the Adopt a Pet page is a simplistic page designed to convince my teacher to get a frilled-neck lizard as his next pet. It gives a species overview, care instructions, 
+        behavior, and whether or not it was legal to own in the state of Arkansas. It includes text, hyperlinks, pictures, and a table. It is easy to see the improvement that I have made in this project.</p>
+    <p></p>
+    <h5>Blog</h5>
+    <p>This project was part of a class assignment focused on learning HTML, CSS, and JavaScript. The end goal was to create a website following the Dos and Don'ts my professor created. 
+        I created a photography portfolio and blog.
+      <br>It included a home page, an image gallery allowing you to move through the different topics and pictures available, an information page telling the tools I used, and a blog. 
+        It is currently unfinished, but if I were to go back and finish it, it would have a working internal navigation for the blog page, better structure, and a lightbox functionality for the pictures.</p>
+      </p>
+
+</div><!--web tab close-->
+
+<div id="databases" class="tabcontent">
+
     <h3>Databases</h3>
-    <p>database work</p>
-</div>
+
+    <p>I decided to take a class in my Associate's Degree about databases. It was mostly done in Access, but in the last month, we learned about MySQL. 
+        I then took a course at SEMO learning more about the different types of databases.</p>
+    <h4>Access Database for MGM</h4>
+    <p></p>
+    <h4>Courses Database</h4>
+    <p></p>
+
+</div><!--databases tab close-->
 
 <div id="current" class="tabcontent">
+
     <h3>Current Work</h3>
-    <p>current projects</p>
-</div>
-<script>
-    function openTab(evt, tabname) {
-        var i, tabcontent, tablinks;
 
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for(i=0; i<tabcontent.length; i++){
-            tabcontent[i].style.display = "none";
-        }
+    <p>I like to challenge myself with different projects. When I hit a wall in my work, I like to see if taking a break will help me get a clearer head. By taking a break, 
+        I mean I usually work on a different project in a different language. 
+      A few of these projects haven't been started, but they've been planned out.
+    </p>
+    <h4>AWS class assignment</h4>
+    <p></p>
+    <h4>Media Game</h4>
+    <p></p>
+    <h4>Restaurant suggestions</h4>
+    <p>This one has not been started, but my friends and I have been planning and talking about it for several months as a way to stop eating at the same restaurants every single time we go out to eat.</p>
 
-        tablinks = document.getElementsByClassName("tablinks");
-        for(i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
+</div><!--current tab close-->
 
-        document.getElementsById(tabname).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-</script>
 
-<div>
-    <p>Footer</p>
-  </div>
 </body>
 </html>
