@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+  <title>About ME</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="nav-bar.js"></script>
+  <script src="accordion.js"></script>
+  <link rel="stylesheet" type="text/css" href="accordion.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .fa {
+    padding: 10px;
+    font-size: 40px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+  }
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    color: #3B5998;
+  }
+  .fa-github {
+    color: black;
+  }
+  .fa-envelope {
+        color: #06266E;
+  }
+  .fa-discord {
+    color: #9b59b6;
+  }
+  .fa-file {
+
+    color: #925551;
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+    .text-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 182, 193, 0.6); /* Light pink with 0.6 opacity */
+        z-index: -1;
+    }
+
+    .text-container p {
+        background-color: white; /* White background for text */
+        padding: 10px; /* Adjust as needed */
+        border-radius: 5px; /* Optional: for rounded corners */
+    }
+
+    </style>
+</head>
+<body class="text-container">
+  <div id="nav-bar"></div>
+  <script>
+      window.onload = function() {
+          fetch('nav-bar.html')
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('nav-bar').innerHTML = data;
+              });
+      }
+  </script>
+
+<!--Top id link-->
+<a id="Top"></a>
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+        <!--picture of me-->
+        <img src="IMG_3624.jpg" alt="picture of me" >
+
+
+    </div><!--first column div-->
+    <!--=================New column====================-->
+    <div class="col-sm-8">
+
+      <!--Quick Bio about me-->
+        <div>
+            <p>Hi there! I'm Sam, a passionate software developer with a keen interest in web development. Currently, I'm diving deep into the world of code as a student designer, where I get to blend my love for creativity and technology. My journey in software development has been incredibly rewarding, and I find joy in crafting user-friendly web experiences. I work with multiple programming languages, but my favorite things are SQL and web development. Additionally, I am finishing my Bachelor's of Computer Science at SEMO and will be starting my Master's in the next semester.
+                <br />When I'm not coding, you can often find me reading or playing video games like Stardew Valley or Minecraft. I believe that both reading and gaming offer unique perspectives that enrich my problem-solving skills and creativity. Additionally, I love spending time with my adorable Chihuahua, Sissy. She's the little spark of joy in my life, and we enjoy having cozy evenings together.</p>
+            </div>
+    <div>
+    <!--links of icons for social media and others-->
+    <a href="https://www.facebook.com/Wifi.Panther02" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://github.com/trashpanda20" target="_blank" class="fa fa-github"></a>
+    <a href="mailto:swoodall121@gmail.com" class="fa fa-envelope"></a>
+    <a href="resume.pdf" class="fa fa-file"></a>
+    </div>
+
+ 
+  </div><!--second column div-->
+  </div><!--row div-->
+<div><!--container div-->
+    
+
+    <!--<footer>
+        <iframe src="footer.htm" style="width:100%; height:500px; border:none;"></iframe>
+    </footer>-->
+
+</body>
+</html>
